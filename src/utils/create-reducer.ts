@@ -2,10 +2,11 @@ import { connectRouter } from "connected-react-router";
 import { combineReducers } from "redux";
 
 import { history } from "./history";
+import { tableReducer } from "../containers";
 
-const staticReducers = {
+const reducers = {
   router: connectRouter(history),
+  table: tableReducer,
 };
 
-export const createReducer = (asyncReducers?: any) =>
-  combineReducers({ ...staticReducers, ...asyncReducers });
+export const createReducer = () => combineReducers(reducers);

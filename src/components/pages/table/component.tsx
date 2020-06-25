@@ -16,16 +16,22 @@ const data: Array<Student> = [
   },
 ];
 
-const Table = () => (
-  <div className="container">
-    <Title title="Students" />
-    <div className="table-container">
-      <table>
-        <TableHead headers={headers} />
-        <TableBody data={data} />
-      </table>
+type Props = {
+  isLoading: boolean;
+};
+
+const Table = ({ isLoading }: Props) => {
+  return (
+    <div className="container">
+      <Title title="Students" />
+      <div className="table-container">
+        <table>
+          <TableHead headers={headers} />
+          <TableBody data={data} />
+        </table>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export { Table };

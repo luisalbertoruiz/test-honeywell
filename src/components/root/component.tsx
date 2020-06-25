@@ -6,7 +6,8 @@ import { ConnectedRouter } from "connected-react-router";
 import { initializeStore } from "../../utils/initialize-store";
 import { history } from "../../utils/history";
 import { Nav } from "../navigation";
-import { Add, Detail, Table } from "../pages";
+import { Add, Detail } from "../pages";
+import { Table } from "../../containers/table";
 
 const Root = () => (
   <Provider store={initializeStore()}>
