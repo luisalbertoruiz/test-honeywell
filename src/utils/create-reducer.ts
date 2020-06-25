@@ -1,7 +1,7 @@
 import { connectRouter } from "connected-react-router";
 import { combineReducers } from "redux";
 
-import history from "./history";
+import { history } from "./history";
 
 const staticReducers = {
   router: connectRouter(history),

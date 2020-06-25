@@ -1,4 +1,14 @@
-html,
+:root {
+  --bg-color: #{$bg-color};
+  --font-color-primary: #{$font-color-primary};
+  --container-color-primary: #{$container-color-primary};
+}
 body {
-  margin: 0;
+  background-color: $bg-color;
+  color: $font-color-primary;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  margin: 80px auto 0 auto;
+  max-width: 960px;
 }
