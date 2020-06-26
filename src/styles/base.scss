@@ -3,6 +3,9 @@
   --font-color-primary: #{$font-color-primary};
   --container-color-primary: #{$container-color-primary};
 }
+* {
+  outline: none;
+}
 body {
   background-color: $bg-color;
   color: $font-color-primary;

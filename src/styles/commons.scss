@@ -2,3 +2,58 @@
   font-weight: normal;
   font-size: 1.6em;
 }
+.card {
+  padding: 16px;
+  background-color: $container-color-primary;
+  border-radius: 4px;
+}
+.button {
+  min-width: 160px;
+  height: 40px;
+  background-color: $bg-color;
+  color: $font-color-primary;
+  border-radius: 8px;
+  border: 2px solid $container-color-secondary;
+  &:hover {
+    background-color: $container-color-primary;
+    border-color: $container-color-tertiary;
+  }
+}
+.form-container {
+  position: relative;
+  margin: 16px 0;
+  &:hover .form-label {
+    color: $container-color-tertiary;
+  }
+  &:hover .form-input {
+    border-color: $container-color-tertiary;
+  }
+  .form-label {
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    color: $container-color-secondary;
+    top: -8px;
+    left: 12px;
+    background-color: $container-color-primary;
+    padding: 2px 8px;
+  }
+  .form-input {
+    border: 2px solid $container-color-secondary;
+    background-color: transparent;
+    border-radius: 8px;
+    height: 30px;
+    padding: 4px 16px;
+    color: $font-color-primary;
+    min-width: 360px;
+    &:focus {
+      border-color: $container-color-tertiary;
+      & + .form-label {
+        color: $container-color-tertiary;
+      }
+    }
+  }
+}
+.text-center {
+  text-align: center;
+}
