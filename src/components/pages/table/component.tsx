@@ -1,8 +1,7 @@
 import React from "react";
-import { Title } from "../../commons";
+import { Title, Card } from "../../commons";
 import { TableHead, TableBody } from "./atoms";
 import { Student, Header } from "../../../interfaces";
-import { Card } from "../../commons";
 
 type Props = {
   isLoading: boolean;

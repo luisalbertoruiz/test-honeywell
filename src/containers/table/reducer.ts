@@ -2,7 +2,7 @@ import produce from "immer";
 import { handleActions } from "redux-actions";
 
 import { initialState } from "./state";
-import { TableState, TableActionTypes } from "./types";
+import { TableState, TableTypes } from "./types";
 
 const handleLoading = (state: TableState, action: any) => {
   const { payload } = action;
@@ -26,9 +26,9 @@ const handleHeaders = (state: TableState, action: any) => {
 const tableReducer = produce(
   handleActions(
     {
-      [TableActionTypes.HANDLE_TABLE_IS_LOADING]: handleLoading,
-      [TableActionTypes.HANDLE_TABLE_SET_DATA]: handleData,
-      [TableActionTypes.HANDLE_TABLE_SET_HEADERS]: handleHeaders,
+      [TableTypes.HANDLE_TABLE_IS_LOADING]: handleLoading,
+      [TableTypes.HANDLE_TABLE_SET_DATA]: handleData,
+      [TableTypes.HANDLE_TABLE_SET_HEADERS]: handleHeaders,
     },
     initialState
   )
