@@ -1,0 +1,26 @@
+[
+  {
+    "id": "f02e7044-7bc6-43d7-8bcb-4eb825fbcfa5",
+    "firstName": "Leia",
+    "lastName": "Organa",
+    "address": "",
+    "gpa": "4.0",
+    "phNumber": "1234567890"
+  },
+  {
+    "id": "7b43c11e-fab3-401e-9298-ad23ef7cad77",
+    "firstName": "Kylo",
+    "lastName": "Ren",
+    "address": "",
+    "gpa": "2.7",
+    "phNumber": "6661239876"
+  },
+  {
+    "id": "cc8b3e3c-5bc1-4f02-9ad7-20cf06484697",
+    "firstName": "Anakin",
+    "lastName": "Skywalker",
+    "address": "",
+    "gpa": "3.3",
+    "phNumber": "9876543211"
+  }
+]

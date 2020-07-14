@@ -1,0 +1,35 @@
+.table-container {
+  width: 100%;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    thead {
+      tr {
+        th {
+          border-bottom: 1px solid #808080;
+          padding: 8px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:hover {
+          td {
+            background-color: $container-color-secondary;
+          }
+        }
+        td {
+          border-bottom: 1px solid #808080;
+          padding: 16px;
+          img {
+            width: 18px;
+            padding: 2px;
+            cursor: pointer;
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+  }
+}
